@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="43AB7385-26C5-4FE1-AB0E-A2027896BFF4" ModuleId="NetCommunityEvents" />
+  <Module PersistentId="F9302087-0AB1-46EE-96CF-E242925702BA" ModuleId="NetCommunityEvents.Tests" />
+</Modules>
