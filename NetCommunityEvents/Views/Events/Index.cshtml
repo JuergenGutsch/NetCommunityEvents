@@ -1,0 +1,16 @@
+﻿@model NetCommunityEvents.ViewModels.EventsViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<h2>
+    Index</h2>
+<ul>
+    @foreach (var appointment in Model.Appointments)
+    {
+        <li>
+            <h3>@appointment.Title
+            </h3>
+            <p>@appointment.StartDate - @appointment.EndDate</p>
+        </li>
+    }
+</ul>
