@@ -4,12 +4,13 @@
 }
 <h2>
     Index</h2>
+<p>
+    Anzahl Events: @Model.AllAppointmentsLength</p>
 <ul>
     @foreach (var appointment in Model.Appointments)
     {
         <li>
-            <h3>@appointment.Title
-            </h3>
+            <h3>@Html.ActionLink(appointment.Title, "Event", new { Id = appointment.Id })</h3>
             <p>@appointment.StartDate - @appointment.EndDate</p>
         </li>
     }

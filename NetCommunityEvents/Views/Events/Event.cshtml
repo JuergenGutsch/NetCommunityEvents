@@ -1,0 +1,33 @@
+﻿@model NetCommunityEvents.ViewModels.EventViewModel
+@{
+    ViewBag.Title = "Event";
+}
+<h2>@Model.Title</h2>
+<p>@Model.StartDate - @Model.EndDate</p>
+<p>
+    Description</p>
+<p>@Model.Description</p>
+<p>
+    Organizer: @Model.Organizer</p>
+<p>
+    Location: @Model.Location</p>
+<p>
+    Address: @Model.Address</p>
+<p>
+    Zip: @Model.Zip</p>
+<p>
+    City: @Model.City</p>
+<p>
+    Website: @Model.Website</p>
+<p>
+    RegistrationUrl: @Model.RegistrationUrl</p>
+<p>
+    ContactEmail: @Model.ContactEmail</p>
+<p>
+    PublisherName: @Model.PublisherName</p>
+<p>
+    PublisherEmail: @Model.PublisherEmail</p>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

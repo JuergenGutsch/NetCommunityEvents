@@ -12,20 +12,7 @@ namespace NetCommunityEvents.Data
     {
         public DataRepository()
         {
-            XmlRepository.XmlRepository.DefaultQueryProperty = "Id";
-            XmlRepository.XmlRepository.DataProvider = new XmlInMemoryProvider();
-
-            var generetor = new RandomGenerator();
-            var appointments = Builder<Appointment>.CreateListOfSize(50)
-                .WhereAll()
-                    .Have(a => a.StartDate = generetor.Next(January.The(1).AddSeconds(1), December.The(31).AddHours(23).AddMinutes(59).AddSeconds(59)))
-                    .And(a => a.EndDate = a.StartDate.AddHours(generetor.Next(1, 36)))
-                .Build();
-
-            using (var repository = XmlRepository.XmlRepository.GetInstance<Appointment>())
-            {
-                repository.SaveOnSubmit(appointments);
-            }
+            
         }
 
 
@@ -52,14 +39,13 @@ namespace NetCommunityEvents.Data
             return appointments;
         }
 
-        public T SelectEntity(Func<T, bool> expression, Func<T, object> orderby)
+        public T SelectEntity(Func<T, bool> expression)
         {
             T appointment;
             using (var repository = XmlRepository.XmlRepository.GetInstance<T>())
             {
                 appointment = repository
                     .LoadAllBy(expression)
-                    .OrderBy(orderby)
                     .FirstOrDefault();
             }
             return appointment;

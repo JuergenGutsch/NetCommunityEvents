@@ -1,0 +1,67 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/f:Web.config" caret="648" fromTop="17" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/f:Global.asax.cs" caret="1906" fromTop="24" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:HomeControllerTest.cs" caret="635" fromTop="23" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Models/f:Appointment.cs" caret="870" fromTop="37" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Data/f:DataRepository.cs" caret="1487" fromTop="35" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Data/f:DataRepositoryTests.cs" caret="2472" fromTop="48" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventsViewModel.cs" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1090" fromTop="40" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1782" fromTop="32" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="771" fromTop="24" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Index.cshtml" caret="346" fromTop="12" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="141" fromTop="5" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1277" fromTop="35" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="405" fromTop="18" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="13" fromTop="0" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2615" fromTop="38" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventsViewModel.cs" caret="246" fromTop="10" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="681" fromTop="20" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Index.cshtml" caret="341" fromTop="6" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1569" fromTop="28" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Index.cshtml" caret="319" fromTop="12" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2238" fromTop="47" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2189" fromTop="30" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2458" fromTop="36" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1131" fromTop="32" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="183" fromTop="8" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventsViewModel.cs" caret="0" fromTop="0" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2036" fromTop="41" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Data/f:DataRepositoryTests.cs" caret="2509" fromTop="48" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Data/f:DataRepository.cs" caret="1263" fromTop="29" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Data/f:DataRepository.cs" caret="1487" fromTop="35" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="739" fromTop="25" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="885" fromTop="37" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1090" fromTop="40" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="981" fromTop="30" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="753" fromTop="18" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="753" fromTop="8" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="753" fromTop="50" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="630" fromTop="6" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="589" fromTop="7" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="635" fromTop="29" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Event.cshtml" caret="141" fromTop="5" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.5\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

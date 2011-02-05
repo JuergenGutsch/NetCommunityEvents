@@ -48,6 +48,7 @@ namespace NetCommunityEvents.Tests.Data
                 Assert.That(appointment.StartDate, Is.GreaterThanOrEqualTo(DateTime.Today));
             }
         }
+
         [Test]
         public void SelectNext10EntitiesOrderedByStartDate()
         {
@@ -66,10 +67,11 @@ namespace NetCommunityEvents.Tests.Data
         public void SelectTheNewestEntity()
         {
             var sut = new DataRepository<Appointment>();
-            var appointment = sut.SelectEntity(a => a.StartDate >= DateTime.Today, a => a.StartDate);
+            var appointment = sut.SelectEntity(a => a.StartDate >= DateTime.Today);
 
             Assert.That(appointment, Is.Not.Null);
             Assert.That(appointment.StartDate, Is.GreaterThanOrEqualTo(DateTime.Today));
         }
+
     }
 }
