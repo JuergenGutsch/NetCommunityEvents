@@ -8,19 +8,43 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_Layout.cshtml" caret="400" fromTop="12" />
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/f:Web.config" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:Error.cshtml" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Data/f:DataRepositoryTests.cs" caret="337" fromTop="13" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:HomeControllerTest.cs" caret="378" fromTop="13" />
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/f:Global.asax.cs" caret="0" fromTop="0" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:HomeControllerTest.cs" caret="227" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:Error.cshtml" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Models/f:Appointment.cs" caret="832" fromTop="35" />
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:HomeController.cs" caret="367" fromTop="17" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventsViewModel.cs" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Data/f:DataRepository.cs" caret="1571" fromTop="37" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1169" fromTop="24" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="808" fromTop="0" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1569" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_Layout.cshtml" caret="509" fromTop="17" />
       <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:HomeControllerTest.cs" caret="0" fromTop="0" />
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2049" fromTop="23" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2863" fromTop="37" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2545" fromTop="31" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2767" fromTop="35" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2660" fromTop="35" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1106" fromTop="38" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="3601" fromTop="27" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2880" fromTop="18" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1106" fromTop="25" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1625" fromTop="36" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1169" fromTop="24" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Data/f:DataRepository.cs" caret="1620" fromTop="41" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1601" fromTop="24" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1400" fromTop="26" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="3779" fromTop="28" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1987" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -34,4 +58,64 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="HttpPost" priority="0" />
+      <Item value="HttpGet" priority="0" />
+      <Item value="new" priority="1" />
+      <Item value="Title" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="StartDate" priority="0" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="EndDate" priority="0" />
+      <Item value="RedirectToAction`0" priority="0" />
+      <Item value="Event`0" priority="0" />
+      <Item value="object" priority="0" />
+      <Item value="ModelBinderAttribute`0" priority="0" />
+      <Item value="var" priority="1" />
+      <Item value="model" priority="2" />
+      <Item value="if" priority="0" />
+      <Item value="Guid`0" priority="1" />
+      <Item value="Action`0" priority="0" />
+      <Item value="Assert`0" priority="2" />
+      <Item value="actionName" priority="1" />
+      <Item value="Is`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddHours`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:XmlRepository.Contracts.IXmlRepository`1">
+      <Item value="SaveOnSubmit`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Models.Appointment">
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="Empty" priority="0" />
+      <Item value="NewGuid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.RedirectToRouteResult">
+      <Item value="RouteValues" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="That`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Is">
+      <Item value="Not" priority="1" />
+      <Item value="EqualTo`0" priority="0" />
+      <Item value="GreaterThanOrEqualTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Framework.Constraints.ConstraintExpression">
+      <Item value="Null" priority="1" />
+      <Item value="Empty" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Framework.Constraints.NullConstraint">
+      <Item value="Or" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>
