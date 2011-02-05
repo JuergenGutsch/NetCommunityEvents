@@ -56,7 +56,7 @@ namespace NetCommunityEvents.Tests.Controllers
                 Assert.That(appointment.StartDate, Is.GreaterThanOrEqualTo(DateTime.Today));
             }
 
-            Assert.That(model.AllAppointmentsLength, Is.EqualTo(50));
+            Assert.That(model.AllAppointmentsLength, Is.GreaterThanOrEqualTo(50));
         }
 
         [Test]
@@ -72,6 +72,44 @@ namespace NetCommunityEvents.Tests.Controllers
 
             // Assert
             Assert.That(model.Id, Is.EqualTo(new Guid("00000000-0000-0000-0000-00000000002a")));
+        }
+
+        [Test]
+        public void AddGet()
+        {
+            // Arrange
+            var controller = new EventsController();
+
+            // Act
+            var result = controller.Add() as ViewResult;
+
+            var model = result.Model as EventViewModel;
+
+            // Assert
+            Assert.That(model, Is.Not.Null);
+        }
+
+        [Test]
+        public void AddPost()
+        {
+            var controller = new EventsController();
+
+            // Act
+            var result = controller.Add(new EventViewModel
+                                            {
+                                                Title = "Neue Veranstaltung",
+                                                Description = "Beschreibung...",
+                                                StartDate = DateTime.Now,
+                                                EndDate = DateTime.Now.AddHours(4)
+                                            }) as RedirectToRouteResult;
+
+            var actionName = result.RouteValues["action"];
+            var modelId = result.RouteValues["action"];
+
+            // Assert
+            Assert.That(actionName, Is.Not.Null.Or.Empty);
+            Assert.That(actionName, Is.EqualTo("Event"));
+            Assert.That(modelId, Is.Not.Null.Or.Empty);
         }
     }
 }

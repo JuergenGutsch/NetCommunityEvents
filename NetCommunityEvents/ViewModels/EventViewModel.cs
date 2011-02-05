@@ -40,5 +40,11 @@ namespace NetCommunityEvents.ViewModels
             AutoMapper.Mapper.Configuration.CreateMap<Appointment, EventViewModel>();
             return AutoMapper.Mapper.Map<Appointment, EventViewModel>(appointment);
         }
+
+        public Appointment CreateModel()
+        {
+            AutoMapper.Mapper.Configuration.CreateMap<EventViewModel, Appointment>();
+            return AutoMapper.Mapper.Map<EventViewModel, Appointment>(this);
+        }
     }
 }

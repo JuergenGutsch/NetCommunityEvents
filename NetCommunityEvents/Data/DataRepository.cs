@@ -1,21 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using FizzWare.NBuilder;
-using FizzWare.NBuilder.Dates;
 using NetCommunityEvents.Models;
-using XmlRepository.DataProviders;
 
 namespace NetCommunityEvents.Data
 {
     public class DataRepository<T> where T : Identity, new()
     {
-        public DataRepository()
-        {
-            
-        }
-
-
         public IEnumerable<T> SelectEntities(Func<T, bool> expression)
         {
             IEnumerable<T> appointments;
@@ -49,6 +40,14 @@ namespace NetCommunityEvents.Data
                     .FirstOrDefault();
             }
             return appointment;
+        }
+
+        public void SaveEntity(T model)
+        {
+            using (var repository = XmlRepository.XmlRepository.GetInstance<T>())
+            {
+                repository.SaveOnSubmit(model);
+            }
         }
     }
 }

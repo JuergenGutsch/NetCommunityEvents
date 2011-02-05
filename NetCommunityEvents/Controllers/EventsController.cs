@@ -34,5 +34,27 @@ namespace NetCommunityEvents.Controllers
 
             return View(viewModel);
         }
+
+        [HttpGet]
+        public ActionResult Add()
+        {
+            return View(new EventViewModel());
+        }
+
+        [HttpGet]
+        public ActionResult Add(EventViewModel viewModel)
+        {
+            var repository = new DataRepository<Appointment>();
+            var model = viewModel.CreateModel();
+
+            if(model.Id == Guid.Empty)
+            {
+                model.Id = Guid.NewGuid();
+            }
+
+            repository.SaveEntity(model);
+
+            return RedirectToAction("Event", new {Id = model.Id});
+        }
     }
 }
