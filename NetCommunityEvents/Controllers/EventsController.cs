@@ -9,16 +9,19 @@ namespace NetCommunityEvents.Controllers
 {
     public class EventsController : Controller
     {
-        //
-        // GET: /Events/
+        private readonly IDataRepository<Appointment> _dataRepository;
+
+        public EventsController(IDataRepository<Appointment> dataRepository)
+        {
+            _dataRepository = dataRepository;
+        }
 
         public ActionResult Index()
         {
             var viewModel = new EventsViewModel();
-            var repository = new DataRepository<Appointment>();
 
-            viewModel.Appointments = repository.SelectEntities(10, a => a.StartDate >= DateTime.Today, a => a.StartDate);
-            viewModel.AllAppointmentsLength = repository.SelectEntities(a => true).Count();
+            viewModel.Appointments = _dataRepository.SelectEntities(10, a => a.StartDate >= DateTime.Today, a => a.StartDate);
+            viewModel.AllAppointmentsLength = _dataRepository.SelectEntities(a => true).Count();
 
             return View(viewModel);
         }
@@ -26,9 +29,7 @@ namespace NetCommunityEvents.Controllers
 
         public ActionResult Event(Guid id)
         {
-            var repository = new DataRepository<Appointment>();
-
-            var model = repository.SelectEntity(a => a.Id == id);
+            var model = _dataRepository.SelectEntity(a => a.Id == id);
 
             var viewModel = EventViewModel.Create(model);
 
@@ -44,7 +45,6 @@ namespace NetCommunityEvents.Controllers
         [HttpGet]
         public ActionResult Add(EventViewModel viewModel)
         {
-            var repository = new DataRepository<Appointment>();
             var model = viewModel.CreateModel();
 
             if(model.Id == Guid.Empty)
@@ -52,9 +52,18 @@ namespace NetCommunityEvents.Controllers
                 model.Id = Guid.NewGuid();
             }
 
-            repository.SaveEntity(model);
+            _dataRepository.SaveEntity(model);
 
             return RedirectToAction("Event", new {Id = model.Id});
+        }
+
+        public ActionResult Edit(Guid id)
+        {
+            var model = _dataRepository.SelectEntity(a => a.Id == id);
+
+            var viewModel = EventViewModel.Create(model);
+
+            return View(viewModel);
         }
     }
 }

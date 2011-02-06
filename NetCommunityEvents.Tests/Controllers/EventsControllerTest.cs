@@ -1,101 +1,86 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
-using FizzWare.NBuilder;
-using FizzWare.NBuilder.Dates;
-using NetCommunityEvents.Controllers;
 using NetCommunityEvents.Models;
 using NetCommunityEvents.ViewModels;
 using NUnit.Framework;
-using XmlRepository.DataProviders;
+using Rhino.Mocks;
 
 namespace NetCommunityEvents.Tests.Controllers
 {
     [TestFixture]
-    public class EventsControllerTest
+    public class EventsControllerTest : EventsTestBase
     {
-        #region Setup
-
-        [SetUp]
-        public void Setup()
-        {
-            XmlRepository.XmlRepository.DefaultQueryProperty = "Id";
-            XmlRepository.XmlRepository.DataProvider = new XmlInMemoryProvider();
-
-            var generetor = new RandomGenerator();
-            var appointments = Builder<Appointment>.CreateListOfSize(50)
-                .WhereAll()
-                    .Have(a => a.StartDate = generetor.Next(January.The(1).AddSeconds(1), December.The(31).AddHours(23).AddMinutes(59).AddSeconds(59)))
-                    .And(a => a.EndDate = a.StartDate.AddHours(generetor.Next(1, 36)))
-                .Build();
-
-            using (var repository = XmlRepository.XmlRepository.GetInstance<Appointment>())
-            {
-                repository.SaveOnSubmit(appointments);
-            }
-        }
-
-        #endregion
-
         [Test]
         public void Index()
         {
             // Arrange
-            var controller = new EventsController();
+            DataRepository
+                .Stub(d => d.SelectEntities(10, a => a.StartDate >= DateTime.Today, a => a.StartDate))
+                .Return(Appointments
+                            .Where(a => a.StartDate >= DateTime.Today)
+                            .OrderBy(a => a.StartDate)
+                            .Take(10))
+                .IgnoreArguments();
+
+            DataRepository
+                .Stub(d => d.SelectEntities(a => true))
+                .Return(Appointments.Where(a => true))
+                .IgnoreArguments();
 
             // Act
-            var result = controller.Index() as ViewResult;
-
-            var model = result.Model as EventsViewModel;
+            var viewResult = EventsController.Index() as ViewResult;
+            var viewModel = viewResult.Model as EventsViewModel;
             
             // Assert
-            Assert.That(model.Appointments, Is.Not.Null);
-            Assert.That(model.Appointments.Count(), Is.EqualTo(10));
-            foreach (var appointment in model.Appointments)
+            Assert.That(viewModel.Appointments, Is.Not.Null);
+            Assert.That(viewModel.Appointments.Count(), Is.EqualTo(10));
+            foreach (var appointment in viewModel.Appointments)
             {
                 Assert.That(appointment.StartDate, Is.GreaterThanOrEqualTo(DateTime.Today));
             }
 
-            Assert.That(model.AllAppointmentsLength, Is.GreaterThanOrEqualTo(50));
+            Assert.That(viewModel.AllAppointmentsLength, Is.GreaterThanOrEqualTo(50));
         }
 
         [Test]
         public void Event()
         {
             // Arrange
-            var controller = new EventsController();
+            var id = new Guid("00000000-0000-0000-0000-00000000002a");
+            DataRepository
+                .Stub(d => d.SelectEntity(a => a.Id == id))
+                .Return(Appointments.Where(a => a.Id == id).FirstOrDefault())
+                .IgnoreArguments();
 
             // Act
-            var result = controller.Event(new Guid("00000000-0000-0000-0000-00000000002a")) as ViewResult;
-
-            var model = result.Model as EventViewModel;
+            var viewResult = EventsController.Event(id) as ViewResult;
+            var viewModel = viewResult.Model as EventViewModel;
 
             // Assert
-            Assert.That(model.Id, Is.EqualTo(new Guid("00000000-0000-0000-0000-00000000002a")));
+            Assert.That(viewModel.Id, Is.EqualTo(id));
         }
 
         [Test]
         public void AddGet()
         {
             // Arrange
-            var controller = new EventsController();
 
             // Act
-            var result = controller.Add() as ViewResult;
-
-            var model = result.Model as EventViewModel;
+            var viewResult = EventsController.Add() as ViewResult;
+            var viewModel = viewResult.Model as EventViewModel;
 
             // Assert
-            Assert.That(model, Is.Not.Null);
+            Assert.That(viewModel, Is.Not.Null);
         }
 
         [Test]
         public void AddPost()
         {
-            var controller = new EventsController();
+            // Arrange
 
             // Act
-            var result = controller.Add(new EventViewModel
+            var result = EventsController.Add(new EventViewModel
                                             {
                                                 Title = "Neue Veranstaltung",
                                                 Description = "Beschreibung...",
@@ -110,6 +95,25 @@ namespace NetCommunityEvents.Tests.Controllers
             Assert.That(actionName, Is.Not.Null.Or.Empty);
             Assert.That(actionName, Is.EqualTo("Event"));
             Assert.That(modelId, Is.Not.Null.Or.Empty);
+        }
+
+        [Test]
+        public void EditGet()
+        {
+            // Arrange
+            var id = new Guid("00000000-0000-0000-0000-00000000002a");
+            DataRepository
+                .Stub(d => d.SelectEntity(a => a.Id == id))
+                .Return(Appointments.Where(a => a.Id == id).FirstOrDefault())
+                .IgnoreArguments();
+
+            // Act
+            var viewResult = EventsController.Edit(id) as ViewResult;
+            var viewModel = viewResult.Model as EventViewModel;
+
+            // Assert
+            Assert.That(viewModel, Is.Not.Null);
+            Assert.That(viewModel.Id, Is.EqualTo(id));
         }
     }
 }

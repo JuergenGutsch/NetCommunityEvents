@@ -5,7 +5,7 @@ using NetCommunityEvents.Models;
 
 namespace NetCommunityEvents.Data
 {
-    public class DataRepository<T> where T : Identity, new()
+    public class DataRepository<T> : IDataRepository<T> where T : Identity, new()
     {
         public IEnumerable<T> SelectEntities(Func<T, bool> expression)
         {
@@ -14,7 +14,7 @@ namespace NetCommunityEvents.Data
             {
                 appointments = repository.LoadAllBy(expression);
             }
-            return appointments;
+            return appointments ?? new List<T>();
         }
 
         public IEnumerable<T> SelectEntities(int top, Func<T, bool> expression, Func<T, object> orderby)
@@ -27,7 +27,7 @@ namespace NetCommunityEvents.Data
                     .OrderBy(orderby)
                     .Take(top);
             }
-            return appointments;
+            return appointments ?? new List<T>();
         }
 
         public T SelectEntity(Func<T, bool> expression)
