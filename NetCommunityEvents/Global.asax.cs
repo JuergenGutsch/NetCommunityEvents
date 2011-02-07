@@ -20,8 +20,7 @@ namespace NetCommunityEvents
         {
             SetupDiContainer();
             
-            Bootstrapper.Start()
-                .FromServiceLocator()
+            Bootstrapper.CreateNew()
                 .Execute();
         }
 

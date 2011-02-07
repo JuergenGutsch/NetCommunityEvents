@@ -49,5 +49,13 @@ namespace NetCommunityEvents.Data
                 repository.SaveOnSubmit(model);
             }
         }
+
+        public void DelelteEntity(Func<T, bool> expression)
+        {
+            using (var repository = XmlRepository.XmlRepository.GetInstance<T>())
+            {
+                repository.DeleteOnSubmit(expression);
+            }
+        }
     }
 }

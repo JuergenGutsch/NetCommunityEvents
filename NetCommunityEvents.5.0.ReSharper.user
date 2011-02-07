@@ -24,6 +24,7 @@
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1169" fromTop="24" />
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="808" fromTop="0" />
       <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1569" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/f:AreasInitializer.cs" caret="243" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
       <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_Layout.cshtml" caret="509" fromTop="17" />

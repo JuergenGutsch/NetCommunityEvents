@@ -65,5 +65,22 @@ namespace NetCommunityEvents.Controllers
 
             return View(viewModel);
         }
+
+        public ActionResult Edit(Guid id, EventViewModel viewModel)
+        {
+            viewModel.Id = id;
+            var model = viewModel.CreateModel();
+
+            _dataRepository.SaveEntity(model);
+
+            return RedirectToAction("Event", new { Id = model.Id });
+        }
+
+        public ActionResult Delete(Guid id)
+        {
+            _dataRepository.DelelteEntity(a => a.Id == id);
+
+            return RedirectToAction("Index", new { Id = id });
+        }
     }
 }

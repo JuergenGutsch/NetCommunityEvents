@@ -89,7 +89,7 @@ namespace NetCommunityEvents.Tests.Controllers
                                             }) as RedirectToRouteResult;
 
             var actionName = result.RouteValues["action"];
-            var modelId = result.RouteValues["action"];
+            var modelId = result.RouteValues["id"];
 
             // Assert
             Assert.That(actionName, Is.Not.Null.Or.Empty);
@@ -114,6 +114,49 @@ namespace NetCommunityEvents.Tests.Controllers
             // Assert
             Assert.That(viewModel, Is.Not.Null);
             Assert.That(viewModel.Id, Is.EqualTo(id));
+        }
+
+        [Test]
+        public void EditPost()
+        {
+            // Arrange
+            var id = new Guid("00000000-0000-0000-0000-00000000002a");
+            var viewModel = new EventViewModel
+                                {
+                                    Title = "Neue Veranstaltung",
+                                    Description = "Beschreibung...",
+                                    StartDate = DateTime.Now,
+                                    EndDate = DateTime.Now.AddHours(4)
+                                };
+
+            // Act
+            var viewResult = EventsController.Edit(id, viewModel) as RedirectToRouteResult;
+            var actionName = viewResult.RouteValues["action"];
+            var modelId = viewResult.RouteValues["id"];
+            
+            // Assert
+            Assert.That(actionName, Is.Not.Null.Or.Empty);
+            Assert.That(actionName, Is.EqualTo("Event"));
+            Assert.That(modelId, Is.Not.Null.Or.Empty);
+            Assert.That(modelId, Is.EqualTo(id));
+        }
+
+        [Test]
+        public void Delete()
+        {
+            // Arrange
+            var id = new Guid("00000000-0000-0000-0000-00000000002a");
+
+            // Act
+            var viewResult = EventsController.Delete(id) as RedirectToRouteResult;
+            var actionName = viewResult.RouteValues["action"];
+            var modelId = viewResult.RouteValues["id"];
+
+            // Assert
+            Assert.That(actionName, Is.Not.Null.Or.Empty);
+            Assert.That(actionName, Is.EqualTo("Index"));
+            Assert.That(modelId, Is.Not.Null.Or.Empty);
+            Assert.That(modelId, Is.EqualTo(id));
         }
     }
 }
