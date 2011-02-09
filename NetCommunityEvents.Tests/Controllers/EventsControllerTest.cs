@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using FizzWare.NBuilder;
+using FizzWare.NBuilder.Dates;
+using NetCommunityEvents.Controllers;
+using NetCommunityEvents.Data;
 using NetCommunityEvents.Models;
 using NetCommunityEvents.ViewModels;
 using NUnit.Framework;
@@ -9,8 +14,31 @@ using Rhino.Mocks;
 namespace NetCommunityEvents.Tests.Controllers
 {
     [TestFixture]
-    public class EventsControllerTest : EventsTestBase
+    public class EventsControllerTest 
     {
+        protected IDataRepository<Appointment> DataRepository;
+        protected EventsController Sut;
+
+        protected IEnumerable<Appointment> Appointments;
+
+        [SetUp]
+        public void Setup()
+        {
+            var generetor = new RandomGenerator();
+            Appointments = Builder<Appointment>.CreateListOfSize(50)
+                .WhereAll()
+                .Have(
+                    a =>
+                    a.StartDate =
+                    generetor.Next(January.The(1).AddSeconds(1),
+                                   December.The(31).AddHours(23).AddMinutes(59).AddSeconds(59)))
+                .And(a => a.EndDate = a.StartDate.AddHours(generetor.Next(1, 36)))
+                .Build();
+
+            DataRepository = MockRepository.GenerateStub<IDataRepository<Appointment>>();
+            Sut = new EventsController(DataRepository);
+        }
+
         [Test]
         public void Index()
         {
@@ -29,7 +57,7 @@ namespace NetCommunityEvents.Tests.Controllers
                 .IgnoreArguments();
 
             // Act
-            var viewResult = EventsController.Index() as ViewResult;
+            var viewResult = Sut.Index() as ViewResult;
             var viewModel = viewResult.Model as EventsViewModel;
             
             // Assert
@@ -54,7 +82,7 @@ namespace NetCommunityEvents.Tests.Controllers
                 .IgnoreArguments();
 
             // Act
-            var viewResult = EventsController.Event(id) as ViewResult;
+            var viewResult = Sut.Event(id) as ViewResult;
             var viewModel = viewResult.Model as EventViewModel;
 
             // Assert
@@ -67,7 +95,7 @@ namespace NetCommunityEvents.Tests.Controllers
             // Arrange
 
             // Act
-            var viewResult = EventsController.Add() as ViewResult;
+            var viewResult = Sut.Add() as ViewResult;
             var viewModel = viewResult.Model as EventViewModel;
 
             // Assert
@@ -80,7 +108,7 @@ namespace NetCommunityEvents.Tests.Controllers
             // Arrange
 
             // Act
-            var result = EventsController.Add(new EventViewModel
+            var result = Sut.Add(new EventViewModel
                                             {
                                                 Title = "Neue Veranstaltung",
                                                 Description = "Beschreibung...",
@@ -108,7 +136,7 @@ namespace NetCommunityEvents.Tests.Controllers
                 .IgnoreArguments();
 
             // Act
-            var viewResult = EventsController.Edit(id) as ViewResult;
+            var viewResult = Sut.Edit(id) as ViewResult;
             var viewModel = viewResult.Model as EventViewModel;
 
             // Assert
@@ -130,7 +158,7 @@ namespace NetCommunityEvents.Tests.Controllers
                                 };
 
             // Act
-            var viewResult = EventsController.Edit(id, viewModel) as RedirectToRouteResult;
+            var viewResult = Sut.Edit(id, viewModel) as RedirectToRouteResult;
             var actionName = viewResult.RouteValues["action"];
             var modelId = viewResult.RouteValues["id"];
             
@@ -148,7 +176,7 @@ namespace NetCommunityEvents.Tests.Controllers
             var id = new Guid("00000000-0000-0000-0000-00000000002a");
 
             // Act
-            var viewResult = EventsController.Delete(id) as RedirectToRouteResult;
+            var viewResult = Sut.Delete(id) as RedirectToRouteResult;
             var actionName = viewResult.RouteValues["action"];
             var modelId = viewResult.RouteValues["id"];
 

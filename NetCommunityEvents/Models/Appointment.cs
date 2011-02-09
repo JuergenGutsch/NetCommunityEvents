@@ -32,9 +32,4 @@ namespace NetCommunityEvents.Models
 
         public string PublisherEmail { get; set; }
     }
-
-    public class Identity
-    {
-        public Guid Id { get; set; }
-    }
 }
