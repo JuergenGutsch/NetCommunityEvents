@@ -1,13 +1,12 @@
-﻿using System.Web;
-using System.Web.Mvc;
-using System.Web.Routing;
+﻿using System;
+using System.Web;
+using System.Web.Security;
 using LightCore;
 using LightCore.Integration.Web;
-using LightCore.Integration.Web.Mvc;
 using NetCommunityEvents.Data;
 using NetCommunityEvents.Infrastructure;
+using NetCommunityEvents.Infrastructure.Auth;
 using NetCommunityEvents.Models;
-using XmlRepository.DataProviders;
 
 namespace NetCommunityEvents
 {
@@ -16,6 +15,8 @@ namespace NetCommunityEvents
 
     public class MvcApplication : HttpApplication, IContainerAccessor
     {
+        public IContainer Container { get; set; }
+
         protected void Application_Start()
         {
             SetupDiContainer();
@@ -28,6 +29,8 @@ namespace NetCommunityEvents
         {
             var builder = new ContainerBuilder();
             builder.Register<IDataRepository<Appointment>, DataRepository<Appointment>>();
+            builder.Register<IDataRepository<User>, DataRepository<User>>();
+            builder.Register<IDataRepository<Content>, DataRepository<Content>>();
 
             builder.Register<IBootstrapItem, AreasInitializer>();
             builder.Register<IBootstrapItem, ControllerFactoryInitializer>();
@@ -38,6 +41,20 @@ namespace NetCommunityEvents
             Container = builder.Build();
         }
 
-        public IContainer Container { get; set; }
+        protected void Application_AuthenticateRequest(Object sender, EventArgs e)
+        {
+            string name = String.Empty;
+            HttpCookie authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+            if (authCookie != null)
+            {
+                FormsAuthenticationTicket authTicket = FormsAuthentication.Decrypt(authCookie.Value);
+                name = authTicket.Name;
+            }
+            var identity = new CustomIdentity(name, "Forms");
+            var principal = new CustomPrincipal(identity);
+            Context.User = principal;
+        }
+
+
     }
 }

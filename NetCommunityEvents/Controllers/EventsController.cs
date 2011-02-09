@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 using NetCommunityEvents.Data;
+using NetCommunityEvents.Infrastructure.Auth;
 using NetCommunityEvents.Models;
 using NetCommunityEvents.ViewModels;
 
@@ -37,12 +38,14 @@ namespace NetCommunityEvents.Controllers
         }
 
         [HttpGet]
+        [IsAuthenticated]
         public ActionResult Add()
         {
             return View(new EventViewModel());
         }
 
-        [HttpGet]
+        [HttpPost]
+        [IsAuthenticated]
         public ActionResult Add(EventViewModel viewModel)
         {
             var model = viewModel.CreateModel();
@@ -57,6 +60,8 @@ namespace NetCommunityEvents.Controllers
             return RedirectToAction("Event", new {Id = model.Id});
         }
 
+        [HttpGet]
+        [IsAuthenticated]
         public ActionResult Edit(Guid id)
         {
             var model = _dataRepository.SelectEntity(a => a.Id == id);
@@ -66,6 +71,8 @@ namespace NetCommunityEvents.Controllers
             return View(viewModel);
         }
 
+        [HttpPost]
+        [IsAuthenticated]
         public ActionResult Edit(Guid id, EventViewModel viewModel)
         {
             viewModel.Id = id;
@@ -76,6 +83,7 @@ namespace NetCommunityEvents.Controllers
             return RedirectToAction("Event", new { Id = model.Id });
         }
 
+        [IsAuthenticated]
         public ActionResult Delete(Guid id)
         {
             _dataRepository.DelelteEntity(a => a.Id == id);

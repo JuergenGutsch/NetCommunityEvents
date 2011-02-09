@@ -8,44 +8,67 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/f:Web.config" caret="0" fromTop="0" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Data/f:DataRepositoryTests.cs" caret="337" fromTop="13" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:HomeControllerTest.cs" caret="378" fromTop="13" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/f:Global.asax.cs" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:Error.cshtml" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Models/f:Appointment.cs" caret="832" fromTop="35" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:HomeController.cs" caret="367" fromTop="17" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventsViewModel.cs" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Index.cshtml" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Data/f:DataRepository.cs" caret="1571" fromTop="37" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1169" fromTop="24" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="808" fromTop="0" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1569" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/f:AreasInitializer.cs" caret="243" fromTop="10" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Bootstrapper/f:Bootstrapper.cs" caret="453" fromTop="17" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Edit.cshtml" caret="562" fromTop="18" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Events/f:Add.cshtml" caret="343" fromTop="10" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Models/f:Appointment.cs" caret="798" fromTop="33" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Models/f:Identity.cs" caret="82" fromTop="3" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:AuthenticatedAttribute.cs" caret="388" fromTop="9" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:UserInRoleAttribute.cs" caret="641" fromTop="19" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:CustomIdentity.cs" caret="436" fromTop="14" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:Role.cs" caret="108" fromTop="4" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Extensions/f:Encrypt.cs" caret="1904" fromTop="24" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Extensions/f:ExtensionsMethods.cs" caret="860" fromTop="19" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Models/f:Content.cs" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:ContentController.cs" caret="354" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:CustomPrincipal.cs" caret="323" fromTop="10" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/f:Global.asax.cs" caret="1797" fromTop="47" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Data/f:DataRepositoryTests.cs" caret="398" fromTop="16" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="862" fromTop="24" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="3921" fromTop="23" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Extensions/f:ControllerExtensions.cs" caret="1177" fromTop="23" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventsViewModel.cs" caret="296" fromTop="9" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:LoginViewModel.cs" caret="238" fromTop="9" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1114" fromTop="39" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:UserListViewModel.cs" caret="99" fromTop="2" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:IAuthService.cs" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:AuthService.cs" caret="126" fromTop="3" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Models/f:User.cs" caret="98" fromTop="3" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:UserViewModel.cs" caret="393" fromTop="16" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:AuthController.cs" caret="8628" fromTop="85" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="736" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Views/d:Shared/f:_Layout.cshtml" caret="509" fromTop="17" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:HomeControllerTest.cs" caret="0" fromTop="0" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2049" fromTop="23" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2863" fromTop="37" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2545" fromTop="31" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2767" fromTop="35" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2660" fromTop="35" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1106" fromTop="38" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="3601" fromTop="27" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="2880" fromTop="18" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1106" fromTop="25" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1625" fromTop="36" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:EventViewModel.cs" caret="1169" fromTop="24" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Data/f:DataRepository.cs" caret="1620" fromTop="41" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1601" fromTop="24" />
-      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:EventsController.cs" caret="1400" fromTop="26" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="3779" fromTop="28" />
-      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:EventsControllerTest.cs" caret="1987" fromTop="13" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:AuthService.cs" caret="266" fromTop="11" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:AuthService.cs" caret="367" fromTop="16" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Infrastructure/d:Auth/f:AuthService.cs" caret="0" fromTop="0" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:AuthController.cs" caret="621" fromTop="19" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:AuthController.cs" caret="1848" fromTop="27" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="585" fromTop="15" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="1467" fromTop="36" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="2897" fromTop="18" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:AuthController.cs" caret="1727" fromTop="22" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="3480" fromTop="19" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:AuthController.cs" caret="1055" fromTop="8" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="5526" fromTop="48" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="91" fromTop="2" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="5927" fromTop="26" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:UserViewModel.cs" caret="481" fromTop="17" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:ViewModels/f:UserViewModel.cs" caret="171" fromTop="6" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="5247" fromTop="9" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:AuthController.cs" caret="9320" fromTop="20" />
+      <File id="43AB7385-26C5-4FE1-AB0E-A2027896BFF4/d:Controllers/f:AuthController.cs" caret="6804" fromTop="30" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="6428" fromTop="25" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="5968" fromTop="24" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="6316" fromTop="24" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="7021" fromTop="27" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="6971" fromTop="27" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="6825" fromTop="26" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="8352" fromTop="48" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="8341" fromTop="37" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="8341" fromTop="30" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="8119" fromTop="25" />
+      <File id="F9302087-0AB1-46EE-96CF-E242925702BA/d:Controllers/f:AuthControllerTest.cs" caret="7913" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -61,11 +84,11 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="0" />
-      <Item value="void" priority="0" />
-      <Item value="HttpPost" priority="0" />
-      <Item value="HttpGet" priority="0" />
-      <Item value="new" priority="1" />
+      <Item value="public" priority="4" />
+      <Item value="void" priority="4" />
+      <Item value="HttpPost" priority="4" />
+      <Item value="HttpGet" priority="1" />
+      <Item value="new" priority="15" />
       <Item value="Title" priority="0" />
       <Item value="Description" priority="0" />
       <Item value="StartDate" priority="0" />
@@ -73,16 +96,64 @@
       <Item value="EndDate" priority="0" />
       <Item value="RedirectToAction`0" priority="0" />
       <Item value="Event`0" priority="0" />
-      <Item value="object" priority="0" />
+      <Item value="object" priority="1" />
       <Item value="ModelBinderAttribute`0" priority="0" />
-      <Item value="var" priority="1" />
-      <Item value="model" priority="2" />
+      <Item value="var" priority="13" />
+      <Item value="model" priority="3" />
       <Item value="if" priority="0" />
-      <Item value="Guid`0" priority="1" />
+      <Item value="Guid`0" priority="2" />
       <Item value="Action`0" priority="0" />
       <Item value="Assert`0" priority="2" />
       <Item value="actionName" priority="1" />
       <Item value="Is`0" priority="2" />
+      <Item value="ActionResult`0" priority="0" />
+      <Item value="as" priority="0" />
+      <Item value="Rhino" priority="0" />
+      <Item value="Mocks" priority="0" />
+      <Item value="RhinoMocks`0" priority="1" />
+      <Item value="Mocker`0" priority="0" />
+      <Item value="Appointment`0" priority="3" />
+      <Item value="d" priority="2" />
+      <Item value="Appointment" priority="1" />
+      <Item value="Id" priority="2" />
+      <Item value="builder" priority="0" />
+      <Item value="Server" priority="0" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="IEnumerable" priority="1" />
+      <Item value="ICollection" priority="0" />
+      <Item value="protected" priority="0" />
+      <Item value="Appointments" priority="1" />
+      <Item value="id" priority="1" />
+      <Item value="a" priority="0" />
+      <Item value="User" priority="0" />
+      <Item value="u" priority="4" />
+      <Item value="string" priority="2" />
+      <Item value="user" priority="0" />
+      <Item value="viewModel" priority="0" />
+      <Item value="return" priority="0" />
+      <Item value="RoleManagerEventArgs`0" priority="0" />
+      <Item value="UserViewModel`0" priority="1" />
+      <Item value="UserListViewModel" priority="0" />
+      <Item value="Identity`0" priority="0" />
+      <Item value="Content`0" priority="0" />
+      <Item value="char" priority="0" />
+      <Item value="c" priority="1" />
+      <Item value="users" priority="0" />
+      <Item value="User`0" priority="1" />
+      <Item value="Password" priority="1" />
+      <Item value="Persistent" priority="0" />
+      <Item value="Member" priority="0" />
+      <Item value="Admin" priority="0" />
+      <Item value="Users" priority="0" />
+      <Item value="HttpContext" priority="0" />
+      <Item value="HttpRequest" priority="0" />
+      <Item value="HttpResponse" priority="0" />
+      <Item value="Browser" priority="0" />
+      <Item value="HttpBrowserCapabilities" priority="0" />
+      <Item value="Sut" priority="0" />
+      <Item value="Guid" priority="0" />
+      <Item value="userId" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
       <Item value="Now" priority="1" />
@@ -92,13 +163,14 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:XmlRepository.Contracts.IXmlRepository`1">
       <Item value="SaveOnSubmit`0" priority="0" />
+      <Item value="DeleteOnSubmit`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NetCommunityEvents.Models.Appointment">
       <Item value="Id" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Guid">
       <Item value="Empty" priority="0" />
-      <Item value="NewGuid`0" priority="0" />
+      <Item value="NewGuid`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.RedirectToRouteResult">
       <Item value="RouteValues" priority="0" />
@@ -108,7 +180,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Is">
       <Item value="Not" priority="1" />
-      <Item value="EqualTo`0" priority="0" />
+      <Item value="EqualTo`0" priority="1" />
       <Item value="GreaterThanOrEqualTo`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NUnit.Framework.Constraints.ConstraintExpression">
@@ -117,6 +189,109 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:NUnit.Framework.Constraints.NullConstraint">
       <Item value="Or" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Data.DataRepository`1">
+      <Item value="Stub`2" priority="0" />
+      <Item value="SelectEntity`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rhino.Mocks.Interfaces.IMethodOptions`1">
+      <Item value="Return`0" priority="3" />
+      <Item value="IgnoreArguments`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LightCore.ContainerBuilder">
+      <Item value="Register`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpServerUtility">
+      <Item value="MapPath`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LightCore.IContainer">
+      <Item value="ResolveAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Infrastructure.IInternalContainerAccessor">
+      <Item value="SetContainer`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NetCommunityEvents.Infrastructure.Bootstrapper">
+      <Item value="Start`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Infrastructure.Bootstrapper">
+      <Item value="FromServiceLocator`0" priority="0" />
+      <Item value="Execute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.HttpContext">
+      <Item value="Current" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContext">
+      <Item value="Server" priority="0" />
+      <Item value="ApplicationInstance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Where`1" priority="2" />
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="FirstOrDefault`1" priority="1" />
+      <Item value="Select`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Data.IDataRepository`1">
+      <Item value="Stub`2" priority="2" />
+      <Item value="SelectEntities`0" priority="1" />
+      <Item value="SaveEntity`0" priority="5" />
+      <Item value="SelectEntity`0" priority="4" />
+      <Item value="DelelteEntity`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.ViewModels.EventViewModel">
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LightCore.Integration.Web.IContainerAccessor">
+      <Item value="Container" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Models.User">
+      <Item value="Email" priority="1" />
+      <Item value="Id" priority="1" />
+      <Item value="Password" priority="0" />
+      <Item value="Role" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Controllers.UserViewModel">
+      <Item value="CreateModel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NetCommunityEvents.Controllers.UserViewModel">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Models.Content">
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.IValueProvider">
+      <Item value="GetValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Controllers.UserListViewModel">
+      <Item value="AllUsersLength" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NetCommunityEvents.ViewModels.UserViewModel">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.ViewModels.LoginViewModel">
+      <Item value="Email" priority="0" />
+      <Item value="Password" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FizzWare.NBuilder.IListBuilder`1">
+      <Item value="WhereAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FizzWare.NBuilder.IOperable`1">
+      <Item value="Have`2" priority="1" />
+      <Item value="And`1" priority="1" />
+      <Item value="WhereTheFirst`1" priority="0" />
+      <Item value="WhereTheLast`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NetCommunityEvents.Controllers.Role">
+      <Item value="Guest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.TextWriter">
+      <Item value="Null" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Infrastructure.Auth.IAuthService">
+      <Item value="SignIn`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NetCommunityEvents.Controllers.AuthController">
+      <Item value="Logout`0" priority="0" />
+      <Item value="Details`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
