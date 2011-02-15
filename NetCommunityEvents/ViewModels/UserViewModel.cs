@@ -1,5 +1,4 @@
-﻿using System;
-using NetCommunityEvents.Controllers;
+using System;using NetCommunityEvents.Controllers;
 using NetCommunityEvents.Models;
 
 namespace NetCommunityEvents.ViewModels

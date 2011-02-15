@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
@@ -123,7 +123,7 @@ namespace NetCommunityEvents.Controllers
         //    {
         //        if (String.IsNullOrEmpty(collection["oldPassword"]))
         //        {
-        //            ModelState.AddModelError("oldPassword", "Sie m�ssen Ihr altes Passwort angeben.");
+        //            ModelState.AddModelError("oldPassword", "Sie m?ssen Ihr altes Passwort angeben.");
         //        }
 
         //        if (currentUser.Password != collection["oldPassword"].ConvertToHash())
@@ -143,7 +143,7 @@ namespace NetCommunityEvents.Controllers
 
         //        if (collection["newPassword1"] != collection["newPassword2"])
         //        {
-        //            ModelState.AddModelError("newPassword2", "Das Feld Passwort stimmt nicht mit der Passwortwiederholung �berein.");
+        //            ModelState.AddModelError("newPassword2", "Das Feld Passwort stimmt nicht mit der Passwortwiederholung ?berein.");
         //        }
 
         //        if (!ModelState.IsValid)
@@ -164,7 +164,7 @@ namespace NetCommunityEvents.Controllers
         //            ChangedPasswordSubject,
         //            String.Format(ChangedPasswordMailText, collection["newPassword1"]));
 
-        //        ViewData["Message"] = "Ihr Passwort wurde ge�ndert.";
+        //        ViewData["Message"] = "Ihr Passwort wurde ge?ndert.";
         //        ViewData["Status"] = true;
         //    }
         //    catch (Exception)
@@ -219,7 +219,7 @@ namespace NetCommunityEvents.Controllers
             var user = _dataRepository.SelectEntity(u => u.Id == id);
             if (user == null)
             {
-                ViewData["Message"] = "Fer Freischaltlink ist ung�ltig.";
+                ViewData["Message"] = "Fer Freischaltlink ist ung?ltig.";
                 return this.RedirectToActionWithId("Content", "Show", "FreischaltlinkNotValid");
             }
             if (user.IsValid)
@@ -231,7 +231,7 @@ namespace NetCommunityEvents.Controllers
 
             _dataRepository.SaveEntity(user);
 
-            ViewData["Message"] = "Der Account wurde erfolgreich freigeschalten. Sie k�nnen sich nun anmelden.";
+            ViewData["Message"] = "Der Account wurde erfolgreich freigeschalten. Sie k?nnen sich nun anmelden.";
             return this.RedirectToActionWithId("Content", "Show", "SucccessfullFreigeschalten");
         }
 
